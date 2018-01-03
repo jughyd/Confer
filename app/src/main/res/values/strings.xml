@@ -77,4 +77,6 @@
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_organizer">Organizer</string>
+    <string name="title_activity_participant">Participant</string>
 </resources>
