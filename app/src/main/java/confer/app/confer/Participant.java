@@ -1,7 +1,5 @@
 package confer.app.confer;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,12 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Home extends AppCompatActivity {
+public class Participant extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_participant);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -26,18 +24,6 @@ public class Home extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-    }
-
-    public void clickParticipant(View view){
-        final Context context=this;
-        Intent intent = new Intent(context,Participant.class);
-        startActivity(intent);
-    }
-
-    public void clickOrganizer(View view){
-        final Context context=this;
-        Intent intent = new Intent(context,Organizer.class);
-        startActivity(intent);
     }
 
 }
